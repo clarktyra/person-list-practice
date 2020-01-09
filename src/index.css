@@ -26,3 +26,24 @@ body {
   border-radius: 50%;
   border: 0.1rem solid teal;
 }
+
+.person h4 {
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+  letter-spacing: 0.15rem;
+  color: teal;
+}
+
+@media screen and (min-width: 768px){
+  .person-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .person-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
